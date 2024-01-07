@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project Toggle</title>
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+
+<section class="projects">
+    <div class="project-container">
+        <div class="proj">
+            <h3>Selected projects</h3>
+            <p>Here is a sample of projects I’ve worked on.</p>
+        </div>
+        <div class="project-typ">
+            <div class="typ" id="major-projects"><a href="">Major Projects</a></div>
+            <div class="seprtr"></div>
+            <div class="typ" id="small-projects"><a href="">Small Projects</a></div>
+        </div>
+        <div class="div-seprator"></div>
+        <div class="proj-container">
+            <div class="maj-proj">
+                <!-- Major Projects content -->
+                <div class="proj1">
+                    <div class="proj-img">
+                        <img src="/mahindra.png" alt="">
+                    </div>
+                    <div class="proj-info">
+                        <h3>Mahindra Clone</h3>
+                        <p>
+                            <strong class="sky-bl"><u>Introduction</u></strong>: This project involves the creation of a responsive landing page for
+                            Mahindra using HTML and CSS. </p>
+
+                            <p><strong class="sky-bl"><u>Key Project Elements:</u></strong> HTML and CSS Implementation: The landing page has been crafted
+                            using HTML and CSS, incorporating modern design principles and best practices to
+                            ensure a polished and engaging user experience.</p> 
+
+                            <p><strong class="sky-bl"><u>Responsive Design:</u></strong> A paramount aspect of this project has been to prioritize
+                            responsiveness. The webpage layout dynamically adjusts to different screen sizes,
+                            ensuring optimal viewing across devices, including desktops, tablets, and mobile
+                            phones. </p>
+
+                            <p><strong class="sky-bl"><u>Ongoing Development:</u></strong> Beyond the landing page, the project scope encompasses the
+                            ongoing development of further website pages and functionalities.</p>
+                        
+                        <div class="proj-btn">
+                            <a href="https://mahindra-clone.netlify.app/">Link</a>
+                            <a href="https://github.com/pritamkhaple/Mahindra-Home">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj1">
+                    <!-- Major Project 2 -->
+                    <!-- Content for Major Project 2 -->
+                </div>
+                <!-- Add more major project sections if needed -->
+            </div>
+            <div class="small-proj">
+                <!-- Small Projects content -->
+                <div class="proj1">
+                    <div class="proj-img">
+                        <img src="/mahindra.png" alt="">
+                    </div>
+                    <div class="proj-info">
+                        <h3>small Clone</h3>
+                        <p>
+                            <strong class="sky-bl"><u>Introduction</u></strong>: This project involves the creation of a responsive landing page for
+                            Mahindra using HTML and CSS. </p>
+
+                            <p><strong class="sky-bl"><u>Key Project Elements:</u></strong> HTML and CSS Implementation: The landing page has been crafted
+                            using HTML and CSS, incorporating modern design principles and best practices to
+                            ensure a polished and engaging user experience.</p> 
+
+                            <p><strong class="sky-bl"><u>Responsive Design:</u></strong> A paramount aspect of this project has been to prioritize
+                            responsiveness. The webpage layout dynamically adjusts to different screen sizes,
+                            ensuring optimal viewing across devices, including desktops, tablets, and mobile
+                            phones. </p>
+
+                            <p><strong class="sky-bl"><u>Ongoing Development:</u></strong> Beyond the landing page, the project scope encompasses the
+                            ongoing development of further website pages and functionalities.</p>
+                        
+                        <div class="proj-btn">
+                            <a href="https://mahindra-clone.netlify.app/">Link</a>
+                            <a href="https://github.com/pritamkhaple/Mahindra-Home">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="proj1">
+                    <!-- Small Project 2 -->
+                    <!-- Content for Small Project 2 -->
+                </div>
+                <!-- Add more small project sections if needed -->
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const majorProjects = document.querySelector('.maj-proj');
+        const smallProjects = document.querySelector('.small-proj');
+
+        // Hide small projects initially
+        smallProjects.style.display = 'none';
+
+        const majorProjectsButton = document.getElementById('major-projects');
+        const smallProjectsButton = document.getElementById('small-projects');
+
+        majorProjectsButton.addEventListener('click', function() {
+            majorProjects.style.display = 'block';
+            smallProjects.style.display = 'none';
+        });
+
+        smallProjectsButton.addEventListener('click', function() {
+            majorProjects.style.display = 'none';
+            smallProjects.style.display = 'block';
+        });
+    });
+</script>
+
+</body>
+</html>
