@@ -279,15 +279,20 @@
     /* margin: 2rem; */
 }
 
+.proj-block{
+    background-color: black;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
 .proj1 {
-    /* width: 60vw; */
-    /* margin: 3rem auto; */
+    width: 80vw;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* justify-content: center; */
     justify-content: space-evenly;
     align-items: center;
-    background-color: #181818;
     padding: 3rem;
 }
 
