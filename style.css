@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.read-btn{
+    display: none;
+}
+
 .main-container {
     width: 100%;
     /* height: 100vh; */
@@ -18,14 +22,12 @@
 }
 
 .bg-img {
-    /* background: url(/assets/bg/bg-picture-01.jpg);
-    filter: brightness(2px);
-    object-fit: contain; */
+    width: 100%;
 }
 
 .bg-img img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     filter: blur(8px) brightness(0.5);
 }
 
@@ -164,6 +166,10 @@
 .about-container {
     text-align: center;
     margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Skills section */
@@ -224,15 +230,6 @@
     /* margin: 1rem; */
     padding: 1rem 0;
     background-color: #181818;
-}
-
-.proj h3 {
-    font-size: 2rem;
-}
-
-.proj p {
-    font-size: 1.3rem;
-    margin: 1rem;
 }
 
 .project-typ {
@@ -330,12 +327,12 @@
     color: #C16B4E;
 }
 
-.proj-info li {
+/* .proj-info li {
     font-size: 0.9rem;
     margin: 1rem;
     text-align: left;
     color: #C16B4E;
-}
+} */
 
 .proj-btn a {
     text-decoration: none;
@@ -478,7 +475,7 @@
 }
 
 .right-contact div {
-    margin: 2.2rem;
+    margin: 1rem;
     width: 100%;
 }
 

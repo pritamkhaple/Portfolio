@@ -13,3 +13,11 @@ buttonn.addEventListener("click", () => {
     document.querySelector(".majo-proj").style.display = "none";
     document.querySelector(".small-proj").style.display = "flex";
 });
+
+let rd = document.getElementById("read");
+
+rd.addEventListener("click",()=>{
+    console.log("to check read btn")
+    document.querySelector(".read-more").style.display = "block";
+    document.querySelector("#read").style.display = "none";
+})
