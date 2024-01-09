@@ -134,6 +134,11 @@
     margin: 1rem 0;
 }
 
+#home-btn{
+    width: 9rem;
+    padding: 0.4rem;
+}
+
 .btn-divv {
     padding: 0 1rem;
     display: flex;
