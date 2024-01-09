@@ -48,9 +48,7 @@
     }
 
     .btn{
-        padding: 0;
-        margin: 1rem;
-        font-size: 0.8rem;
+        padding: 0.2rem;
     }
 
     /* about section */
@@ -113,6 +111,22 @@
             display: flex;
     }
 
+    .small-proj{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .small-proj1{
+        width: 70%;
+    }
+
+    .proj-info h3{
+        font-size: 1rem;
+    }
+
+    .proj-info ul{
+        font-size: 0.8rem;
+    }
 
 
     /* Contact section */

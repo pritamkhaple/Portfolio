@@ -1,3 +1,5 @@
+// For Major and small projects tab
+
 let button = document.getElementById("majproj");
 
 button.addEventListener("click", () => {
@@ -14,6 +16,8 @@ buttonn.addEventListener("click", () => {
     document.querySelector(".small-proj").style.display = "flex";
 });
 
+// for read more buttn
+
 let rd = document.getElementById("read");
 
 rd.addEventListener("click",()=>{
@@ -21,3 +25,21 @@ rd.addEventListener("click",()=>{
     document.querySelector(".read-more").style.display = "block";
     document.querySelector("#read").style.display = "none";
 })
+
+// For selected button
+
+document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.typ');
+
+    buttons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Remove 'selected' class from all buttons
+            buttons.forEach(function(btn) {
+                btn.classList.remove('selected');
+            });
+
+            // Add 'selected' class to the clicked button
+            this.classList.add('selected');
+        });
+    });
+});

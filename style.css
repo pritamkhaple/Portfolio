@@ -6,11 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.mob-nav{
+.mob-nav {
     display: none;
 }
 
-.read-btn{
+.read-btn {
     display: none;
 }
 
@@ -62,6 +62,13 @@
 .left {
     width: 30%;
     color: white;
+    font-style: italic;
+    font-weight: 600;
+    
+}
+
+.left span{
+    border-bottom: 1px solid white;
 }
 
 .right {
@@ -127,23 +134,84 @@
     margin: 1rem 0;
 }
 
+.btn-divv {
+    padding: 0 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    margin: 0;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg,deepskyblue,darkviolet,blue,white);
+    background-size: 240% 240%;
+    animation: gradient-animation 24s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.btn-2 {
+    background-color: transparent;
+    padding: 0.2rem;
+    margin: 1rem 0;
+    display: inline-block;
+    border: 1px solid blueviolet;
+    width: 2.4rem;
+    border-radius: 0.4rem;
+    transition: 1s;
+}
+
 .btn {
     display: inline-block;
     border: 1px solid blueviolet;
     background-color: blueviolet;
-    padding: 0.3rem;
-    margin: 1rem;
+    padding: 0.2rem;
+    margin: 1rem 0;
+    border-radius: 0.4rem;
+    transition: 1s;
 }
 
-.btn:hover{
+.btn-2:hover {
+    background-color: blueviolet;
+    border: 1px solid;
+    animation: gradient-animation 24s ease infinite;
+}
+
+.btn:hover {
     transition: 1s;
     background-color: transparent;
     border: 1px solid;
+    border: 1px solid blueviolet;
 }
 
 .btn a {
     text-decoration: none;
     color: white;
+    /* margin: 0.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-2 a {
+    text-decoration: none;
+    color: white;
+    /* margin: 0.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -256,8 +324,13 @@
     margin: 1rem;
 }
 
+.selected {
+    background-color: blue; /* Change this to whatever blue shade you prefer */
+    color: white; /* Text color when selected */
+}
+
 .typ {
-    color: white;
+    /* color: white; */
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
@@ -270,6 +343,10 @@
     cursor: pointer;
 }
 
+.typ::selection{
+    border: 1px solid red;
+}
+
 .div-seprator {
     width: 100%;
     /* height: 1.3rem; */
@@ -280,7 +357,7 @@
     /* margin: 2rem; */
 }
 
-.proj-block{
+.proj-block {
     background-color: black;
     width: 100%;
     margin-bottom: 2rem;
@@ -311,6 +388,7 @@
 }
 
 .proj-info {
+    text-align: left;
     width: 80%;
     /* border: 1px solid red; */
     padding: 1rem;
@@ -321,14 +399,15 @@
     font-size: 2rem;
     font-weight: 600;
     margin: 1rem;
-    color: #0371BB;
+    color: white;
+    border-bottom: 1px solid white;
 }
 
 .proj-info p {
     font-size: 0.9rem;
     margin: 1rem;
     text-align: left;
-    color: #C16B4E;
+    color: white;
 }
 
 /* .proj-info li {
@@ -338,7 +417,7 @@
     color: #C16B4E;
 } */
 
-.proj-btn a {
+/* .proj-btn a {
     text-decoration: none;
     color: white;
     border: 1px solid gold;
@@ -354,7 +433,7 @@
     -webkit-box-shadow: 0px 0px 105px 17px rgba(255, 46, 63, 0.9);
     -moz-box-shadow: 0px 0px 105px 17px rgba(255, 46, 63, 0.9);
     box-shadow: 0px 0px 105px 17px rgba(255, 46, 63, 0.9);
-}
+} */
 
 .proj-info ul {
     text-align: left;
@@ -364,13 +443,8 @@
     margin: 1rem;
 }
 
-.proj-info a {
+.proj-info p a {
     text-decoration: none;
-    color: #C16B4E;
-}
-
-.proj-info a:hover {
-    border-bottom: 1px solid red;
     color: white;
 }
 
@@ -483,6 +557,10 @@
     width: 100%;
 }
 
+#msg{
+    height: 4rem;
+}
+
 .cont input {
     width: 15rem;
     /* height: 2rem; */
@@ -501,7 +579,7 @@
 
 #contact-btn {
     border-radius: 4px;
-    background-color: #5ca1e1;
+    background-color: blueviolet;
     border: none;
     color: #fff;
     text-align: left;
@@ -516,7 +594,7 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
     width: 6.2rem;
 }
 
