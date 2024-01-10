@@ -10,6 +10,10 @@
     display: none;
 }
 
+.close{
+    display: none;
+}
+
 .read-btn {
     display: none;
 }
@@ -564,7 +568,7 @@
     height: 4rem;
 }
 
-.cont input {
+.cont input, textarea {
     width: 15rem;
     /* height: 2rem; */
     padding: 0.7rem;
