@@ -18,7 +18,7 @@ buttonn.addEventListener("click", () => {
 
 // for read more buttn
 
-let rd = document.getElementById("read");
+let rd = document.getElementsByClassName("read-btn");
 
 rd.addEventListener("click",()=>{
     console.log("to check read btn")
@@ -26,20 +26,36 @@ rd.addEventListener("click",()=>{
     document.querySelector("#read").style.display = "none";
 })
 
-// For selected button
+function readd(btnNumber) {
+    console.log("to check read btn");
+    document.querySelector(`#read-more${btnNumber}`).style.display = "block";
+    document.querySelector(`#read${btnNumber}`).style.display = "none";
+}
 
-document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.typ');
+// For Hamburger navigation
 
-    buttons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            // Remove 'selected' class from all buttons
-            buttons.forEach(function(btn) {
-                btn.classList.remove('selected');
-            });
+// let burger = document.getElementById("burg");
 
-            // Add 'selected' class to the clicked button
-            this.classList.add('selected');
-        });
-    });
+// burger.addEventListener("click", () => {
+//     console.log("burger clicked") //just to check
+//         document.querySelector(".nav").style.display = "block";
+// })
+
+let burger = document.getElementById("burg");
+let nav = document.querySelector(".nav");
+
+burger.addEventListener("click", () => {
+    console.log("burger clicked"); // Just for checking
+    nav.classList.toggle("show");
 });
+
+// let clos = document.getElementById("closed");
+
+// clos.addEventListener("click", ()=>{
+//     document.querySelector(".mob-nav1-ul").style.display = "none";
+//     document.querySelector(".nav-div").style.height = "auto";
+//     document.querySelector("#burg").style.display = "block";
+//     document.querySelector(".close").style.display = "none";
+//     document.querySelector(".banner-txt").style.position = "absolute";
+//     console.log("check close")
+// })

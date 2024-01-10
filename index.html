@@ -12,40 +12,48 @@
 <body>
     <div class="main-container">
         <div class="home-container">
+           
             <div class="bg-img">
                 <img src="/assets/bg/bg-picture-03.jpg" alt="">
 
                 <nav class="navigation">
+                    
                     <div class="nav">
                         <div class="left">
                             <span>&#10094;&#x2215;&#10095; Pritam</span>
                         </div>
                         <div class="right">
                             <ul class="nav-ul">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">About</a></li>
-                                <li><a href="">Works</a></li>
-                                <li><a href="">Contact</a></li>
+                                <li id="d-none"><a class="nav-a" href="">Home</a></li>
+                                <li><a class="nav-a" href="">About</a></li>
+                                <li><a class="nav-a" href="">Works</a></li>
+                                <li><a class="nav-a" href="">Contact</a></li>
                             </ul>
                         </div>
                     </div>
+                    <div class="mob-nav" id="burg">
+                        <!-- <img src="/assets/hamburger.png" alt=""> -->
+                        <span>&#9776;</span>
+                    </div>
                 </nav>
+                
 
                 <section class="home-introduction">
                     <div class="home-intro">
                         <div class="home-intro-container">
                             <p class="content-p">Hi there! I'm </p>
-                            <h3 class="content-h">Pritam Khaple,a Front-end Deloveper based in Ch. Sambhajinagar</h3>
+                            <h2>Pritam Khaple,</h2>
+                            <h3 class="content-h">a Front-end Deloveper based in Ch. Sambhajinagar</h3>
                             <p class="content-p">Designing Intuitive AI Solutions that empower users to discover,
                                 Understand, and act on data insight at Qlik.</p>
-                            <div class="btn" id="home-btn"><a href="">Download CV</a></div>
+                            <div class="btn" id="home-btn"><a href="https://mahweb-dev.m-devsecops.com/women-at-mahindra">Download CV</a></div>
                         </div>
                     </div>
                 </section>
             </div>
-            <div class="mob-nav">
-                <img src="/assets/hamburger.png" alt="">
-            </div>
+
+            
+            
 
 
             <section class="about-me">
@@ -122,7 +130,7 @@
                                             practices to
                                             ensure a polished and engaging user experience.</p>
 
-                                        <button id="read" class="read-btn">Read more</button>
+                                        <button id="read" onclick="readd" class="read-btn">Read more</button>
 
                                         <div class="read-more">
                                             <p class="content-p"><strong class="sky-bl"><u>Responsive

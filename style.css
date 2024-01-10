@@ -45,6 +45,7 @@
     backdrop-filter: blur(12px);
     position: absolute;
     top: 0;
+    z-index: 1000;
 }
 
 .nav {
@@ -85,16 +86,19 @@
     list-style: none;
     margin: 0 3rem;
     transition: border 1s linear 0s;
-}
-
-.nav-ul li:hover {
-    /* border-bottom: 1px solid #d0c2c2; */
-    border-bottom: 1px solid rgb(230, 59, 59);
+    
 }
 
 .nav-ul li a {
     color: white;
     text-decoration: none;
+    cursor: pointer;
+    /* border-bottom: 1px solid white; */
+}
+
+.nav-ul li a:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
 }
 
 /* Home Intro Section */
@@ -124,6 +128,10 @@
     align-items: center;
 }
 
+.home-intro-container h2{
+    font-size: 4rem;
+}
+
 .content-p {
     font-size: 1.2rem;
     margin: 1rem 0;
@@ -144,28 +152,10 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 15px;
+    gap: 2rem;
     width: fit-content;
     margin: 0;
 }
-
-.gradient-background {
-    background: linear-gradient(300deg,deepskyblue,darkviolet,blue,white);
-    background-size: 240% 240%;
-    animation: gradient-animation 24s ease infinite;
-  }
-  
-  @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
 
 .btn-2 {
     background-color: transparent;
@@ -176,6 +166,7 @@
     width: 2.4rem;
     border-radius: 0.4rem;
     transition: 1s;
+    width: 4rem;
 }
 
 .btn {
@@ -186,12 +177,13 @@
     margin: 1rem 0;
     border-radius: 0.4rem;
     transition: 1s;
+    width: 4rem;
 }
 
 .btn-2:hover {
     background-color: blueviolet;
     border: 1px solid;
-    animation: gradient-animation 24s ease infinite;
+    transform: scale(1.1);
 }
 
 .btn:hover {
@@ -199,6 +191,7 @@
     background-color: transparent;
     border: 1px solid;
     border: 1px solid blueviolet;
+    transform: scale(1.1);
 }
 
 .btn a {
@@ -329,23 +322,22 @@
     margin: 1rem;
 }
 
-.selected {
-    background-color: blue; /* Change this to whatever blue shade you prefer */
-    color: white; /* Text color when selected */
-}
-
 .typ {
     /* color: white; */
     background-color: transparent;
     border: none;
     font-size: 1.5rem;
-    text-transform: uppercase;
+    color: white;
 }
 
-.typ:hover {
+.typ:hover{
     transition: 1s;
     border-bottom: 1px solid rgb(131, 118, 118);
     cursor: pointer;
+}
+
+.typ:active, .typ:focus{
+    border-bottom: 1px solid white;
 }
 
 .typ::selection{
@@ -360,6 +352,10 @@
 
 .proj-container {
     /* margin: 2rem; */
+}
+
+.selected{
+    /* border-bottom: 1px solid red; */
 }
 
 .proj-block {
@@ -533,12 +529,14 @@
 .contact-ul li img {
     height: 2rem;
     width: 2rem;
+    transition: .5s;
 }
 
 .contact-ul li img:hover {
     -webkit-box-shadow: 0px 0px 261px 33px rgba(45, 255, 196, 0.61);
     -moz-box-shadow: 0px 0px 261px 33px rgba(45, 255, 196, 0.61);
     box-shadow: 0px 0px 261px 33px rgba(45, 255, 196, 0.61);
+    transform: scale(1.4);
 }
 
 
@@ -570,7 +568,7 @@
     width: 15rem;
     /* height: 2rem; */
     padding: 0.7rem;
-    border-radius: 1rem;
+    border-radius: 0.4rem;
 }
 
 .cont button {
