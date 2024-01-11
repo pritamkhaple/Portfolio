@@ -41,22 +41,6 @@ buttonn.addEventListener("click", () => {
     document.querySelector(".small-proj").style.display = "flex";
 });
 
-// for read more buttn
-
-// let rd = document.getElementsByClassName("read-btn");
-
-// rd.addEventListener("click",()=>{
-//     console.log("to check read btn")
-//     document.querySelector(".read-more").style.display = "block";
-//     document.querySelector("#read").style.display = "none";
-// });
-
-// function readd(btnNumber) {
-//     console.log("to check read btn");
-//     document.querySelector(`#read-more${btnNumber}`).style.display = "block";
-//     document.querySelector(`#read${btnNumber}`).style.display = "none";
-// };
-
 
 let rdButtons = document.getElementsByClassName("read-btn");
 
@@ -75,4 +59,18 @@ for (let i = 0; i < rdButtons.length; i++) {
 }
 
 
+// For top to btn function
 
+// For Top arrow function
+
+document.addEventListener("DOMContentLoaded", function() {
+    let topArrow = document.getElementById("topArrow");
+
+    topArrow.addEventListener("click", () => {
+        // Scroll to the top of the page
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth" // You can use "auto" for instant scrolling
+        });
+    });
+});

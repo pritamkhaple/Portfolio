@@ -634,3 +634,15 @@ body{
     text-align: center;
     padding: 0.4rem 0;
 }
+
+.top-arrow{
+    position: fixed;
+    bottom: 0;
+    right: 9px;
+    cursor: pointer;
+}
+
+.top-arrow img{
+    width: 2rem;
+    border-radius: 0.5rem;
+}
