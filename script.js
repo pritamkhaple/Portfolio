@@ -18,6 +18,7 @@ clos.addEventListener("click", ()=>{
     document.querySelector(".nav").style.display = "none";
     document.querySelector(".navigation").style.height = "auto";
     document.querySelector(".close").style.display = "none";
+    document.querySelector("body").style.overflow = "auto";
     console.log("check close")
 })
 
