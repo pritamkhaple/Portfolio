@@ -4,7 +4,7 @@ let burger = document.getElementById("burg");
 
 burger.addEventListener("click", () => {
     console.log("burger clicked") //just to check
-        document.querySelector(".nav").style.display = "flex";
+        document.querySelector(".navv").style.display = "flex";
         document.querySelector(".navigation").style.height = "100vh";
         document.querySelector("#burg").style.display = "none";
         document.querySelector(".close").style.display = "block";
@@ -15,7 +15,7 @@ let clos = document.getElementById("closed");
 
 clos.addEventListener("click", ()=>{
     document.querySelector("#burg").style.display = "block";
-    document.querySelector(".nav").style.display = "none";
+    document.querySelector(".navv").style.display = "none";
     document.querySelector(".navigation").style.height = "auto";
     document.querySelector(".close").style.display = "none";
     document.querySelector("body").style.overflow = "auto";
