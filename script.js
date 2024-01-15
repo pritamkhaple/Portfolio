@@ -22,6 +22,20 @@ clos.addEventListener("click", ()=>{
     console.log("check close")
 })
 
+// Get all list items inside the navigation
+let navItems = document.querySelectorAll('.nav-ul li');
+
+// Add click event listener to each list item
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Hide the navigation
+        document.querySelector(".navv").style.display = "none";
+        document.querySelector(".navigation").style.height = "auto";
+        document.querySelector("#burg").style.display = "block";
+        document.querySelector(".close").style.display = "none";
+        document.querySelector("body").style.overflow = "auto";
+    });
+});
 
 // For Major and small projects tab
 
