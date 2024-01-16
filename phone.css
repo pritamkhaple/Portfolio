@@ -15,7 +15,8 @@
         /* -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
         position: fixed; */
-        background-color: rgba(255, 255, 255, -0.2);
+        /* background-color: rgba(255, 255, 255, -0.2); */
+        background-color: black;
         position: fixed;
     }
 
