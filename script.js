@@ -36,7 +36,7 @@ clos.addEventListener("click", ()=>{
 //     });
 // });
 
-// click event listener to lifor inly mob view
+// click event listener to li only mob view
 if (window.innerWidth <= 768) { 
     navItems.forEach(item => {
         item.addEventListener('click', () => {
