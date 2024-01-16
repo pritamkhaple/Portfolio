@@ -12,8 +12,10 @@
     }
 
     .navigation {
-        -webkit-backdrop-filter: blur(20px);
+        /* -webkit-backdrop-filter: blur(20px);
         backdrop-filter: blur(20px);
+        position: fixed; */
+        background-color: rgba(255, 255, 255, -0.2);
         position: fixed;
     }
 
@@ -165,7 +167,7 @@
         width: 100%;
     }
 
-    .proj-info ul li{
+    .proj-info ul li {
         width: 100%;
     }
 
@@ -180,12 +182,13 @@
         width: 100%;
     }
 
-    .cont input, textarea {
+    .cont input,
+    textarea {
         padding: 0.2rem;
         width: 15rem;
     }
 
-    .top-arrow img{
+    .top-arrow img {
         width: 1.5rem;
     }
 
