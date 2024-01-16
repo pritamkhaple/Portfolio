@@ -36,11 +36,10 @@ clos.addEventListener("click", ()=>{
 //     });
 // });
 
-// Add click event listener to each list item only on mobile
-if (window.innerWidth <= 768) { // Adjust the breakpoint as needed
+// click event listener to lifor inly mob view
+if (window.innerWidth <= 768) { 
     navItems.forEach(item => {
         item.addEventListener('click', () => {
-            // Hide the navigation
             document.querySelector(".navv").style.display = "none";
             document.querySelector(".navigation").style.height = "auto";
             document.querySelector("#burg").style.display = "block";
