@@ -623,6 +623,11 @@ textarea {
   /* margin: auto; */
 }
 
+.footer h5{
+  font-size: 0.8rem;
+  margin: 0;
+}
+
 .footer a {
   color: white;
   text-decoration: none;
@@ -634,7 +639,7 @@ textarea {
 
 .top-arrow {
   position: fixed;
-  bottom: 0;
+  bottom: 1rem;
   right: 9px;
   cursor: pointer;
 }
