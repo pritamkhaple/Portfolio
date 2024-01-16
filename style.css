@@ -440,9 +440,9 @@ body {
     box-shadow: 0px 0px 105px 17px rgba(255, 46, 63, 0.9);
 } */
 
-.carousel-inner{
-    max-width:  80%;
-    margin: auto;
+.carousel-inner {
+  max-width: 80%;
+  margin: auto;
 }
 
 .proj-info ul {
@@ -591,46 +591,45 @@ textarea {
   background-color: blueviolet;
   border: none;
   color: #fff;
-  text-align: left;
   font-size: 1rem;
   transition: all 0.5s;
   cursor: pointer;
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
-}
-
-#contact-btn {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-  border-radius: 0.4rem;
-  width: 6.2rem;
-}
-
-#contact-btn:after {
-  content: "»";
-  position: absolute;
-  opacity: 0;
-  top: 3px;
-  right: -20px;
-  transition: 0.5s;
+  width: 5.2rem;
+  display: flex;
+  padding: 0.3rem 0;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact-btn:hover {
   padding-right: 24px;
   padding-left: 8px;
+  transform: translateY(-10px);
+  transition: 1s;
 }
 
-#contact-btn:hover:after {
-  opacity: 1;
-  right: 10px;
-}
 
 .footer {
   background-color: black;
   color: white;
   text-align: center;
   padding: 0.4rem 0;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  /* width: 70vw; */
+  /* margin: auto; */
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: red;
 }
 
 .top-arrow {
