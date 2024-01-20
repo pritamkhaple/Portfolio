@@ -1,3 +1,17 @@
+// for hover effect
+
+const bgAnimations = document.getElementById("bg-animations");
+
+        const numberOfColorBoxes = 400;
+
+        for (let i = 0; i < numberOfColorBoxes; i++) {
+            const colorBox = document.createElement("div");
+
+            colorBox.classList.add("color-box");
+            bgAnimations.append(colorBox);
+        }
+
+
 // For Hamburger navigation
 
 let burger = document.getElementById("burg");
@@ -84,8 +98,29 @@ for (let i = 0; i < rdButtons.length; i++) {
     });
 }
 
+// For contact form
 
-// For top to btn function
+const form = document.querySelector("#form")
+        const submitButton = document.querySelector("#contact-btn")
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysYX7eEm9rFvP-SN-MoyXIC0tLZZ-efWX9EEncmE5XA3GekLbnSMcdBVfE6nivL_vh/exec'
+
+        form.addEventListener('submit', e => {
+            console.log("Working...");
+            submitButton.disabled = true
+            e.preventDefault()
+            let requestBody = new FormData(form)
+            fetch(scriptURL, { method: 'POST', body: requestBody })
+                .then(response => {
+                    alert('Thank you!!! For quick response you can call/mail me', response)
+                    submitButton.disabled = false
+                })
+                .catch(error => {
+                    alert('Error!', error.message)
+                    submitButton.disabled = false
+
+                }
+                )
+        })
 
 // For Top arrow function
 

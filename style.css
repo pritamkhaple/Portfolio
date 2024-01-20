@@ -10,6 +10,36 @@ body {
   overflow: auto;
 }
 
+
+.bg-animations {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  background: #1d1d1d;
+  filter: saturate(2);
+  overflow: hidden;
+}
+
+.color-box {
+  z-index: 2;
+  filter: brightness(1.1);
+  transition: 2s ease;
+  position: relative;
+  margin: 2px;
+  background: #1d1d1d;
+}
+
+.color-box:hover {
+  background: gold;
+  transition-duration: 0s;
+}
+
+
 .mob-nav {
   display: none;
 }
@@ -28,7 +58,7 @@ body {
 }
 
 .home-container {
-  background-color: #2e2e2e;
+  background-color: #1d1d1d;
 
   /* height: 100vh; */
 }
@@ -108,6 +138,8 @@ body {
   cursor: pointer;
 }
 
+
+
 /* Home Intro Section */
 
 .home-introduction {
@@ -115,6 +147,8 @@ body {
   top: 0;
   /* margin: auto; */
   width: 100%;
+  pointer-events: none;
+  padding-top: 7rem;
 }
 
 .home-intro {
@@ -126,7 +160,7 @@ body {
 
 .home-intro-container {
   text-align: center;
-  margin: 13rem auto;
+  /* margin: 13rem auto; */
   width: 100%;
   color: white;
   display: flex;
@@ -152,6 +186,7 @@ body {
 #home-btn {
   width: 9rem;
   padding: 0.4rem;
+  pointer-events: all;
 }
 
 .btn-divv {
@@ -274,6 +309,10 @@ body {
 
 .skill-img {
   margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-txt h3 {
@@ -609,7 +648,6 @@ textarea {
   transition: 1s;
 }
 
-
 .footer {
   background-color: black;
   color: white;
@@ -623,7 +661,7 @@ textarea {
   /* margin: auto; */
 }
 
-.footer h5{
+.footer h5 {
   font-size: 0.8rem;
   margin: 0;
 }

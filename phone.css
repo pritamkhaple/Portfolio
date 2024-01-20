@@ -4,6 +4,10 @@
         padding: 0;
     }
 
+    .bg-animations{
+        height: 50vh;
+    }
+
     #closed {
         display: none;
         position: absolute;
